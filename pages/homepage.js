@@ -6,6 +6,7 @@ import Activity from '../components/activity'
 import { useState, useEffect } from 'react'
 import UploadModal from '../components/UploadModal'
 import useSpotify from '../hooks/useSpotify'
+import style from '../styles/UploadModal.module.css'
 //import {songs} from '../data/songs.js'
 
 const HomePage = () => {
@@ -46,6 +47,10 @@ const HomePage = () => {
             newMusic={newMusic}
           />
         )}
+	<button onClick={() => getSongs().then(songs => {
+       setSongs(songs)
+     })}
+     className={`${style.button} ${style.createButton}`}>Reload</button>
       </div>
       <Activity />
     </div>
