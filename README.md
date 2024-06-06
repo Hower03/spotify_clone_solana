@@ -1,10 +1,10 @@
 ## Getting Started
 
-First, install the neccessary dependencies
+First
 ```bash
 npm install
 ```
-Then, run the development server:
+Then
 
 ```bash
 npm run dev
